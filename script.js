@@ -50,3 +50,8 @@ priceCoat.innerHTML  = `${priceCoatDiscounted}`;
 const priceTrousersDiscounted = Number(priceTrousers.innerHTML) - (Number(priceTrousers.innerHTML) * discount );
 priceTrousers.innerHTML  = `${priceTrousersDiscounted}`;
 }
+
+// Добавляем обработчик событий
+
+const discountButton = document.querySelector('.count__button');
+discountButton.addEventListener('click', countDiscountedSum , {once : true});
