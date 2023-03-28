@@ -68,7 +68,7 @@ gap: 10px;
 }
 
 /* Подсчет суммы */
-.count {
+.count-container {
     width: 50%;
     display: flex;
     flex-direction: row;
@@ -84,6 +84,9 @@ gap: 10px;
     width: max-content;
     height: 50px;
     cursor: pointer;
-    
+}
 
+.count__sum {
+    color: blue;
+    font-size: 1.2em;
 }

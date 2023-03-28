@@ -23,7 +23,9 @@
             Количество: 1
           </p>
         </div>
-        <div class="item__price">1 799 руб.</div>
+        <div class="item__price">
+          <span id="item__price_hoodie">1799</span> руб.
+        </div>
       </div>
 
       <!-- Товар 2 -->
@@ -39,7 +41,9 @@
             Количество: 1
           </p>
         </div>
-        <div class="item__price">2 599 руб.</div>
+        <div class="item__price">
+          <span id="item__price_dress">2599</span> руб.
+        </div>
       </div>
 
       <!-- Товар 3 -->
@@ -55,13 +59,15 @@
             Количество: 1
           </p>
         </div>
-        <div class="item__price">2 299 руб.</div>
+        <div class="item__price">
+          <span id="item__price_jacket">2299</span> руб.
+        </div>
       </div>
 
       <!-- Товар 4 -->
       <div class="item">
         <div class="item__img-wrapper">
-          <img class="item__img" src="assets/img/coat.jpg" alt="jacket" />
+          <img class="item__img" src="assets/img/coat.jpg" alt="coat" />
         </div>
         <div class="item__description">
           <h2 class="item__title">Ostin Длинное пальто-рубашка</h2>
@@ -71,7 +77,9 @@
             Количество: 1
           </p>
         </div>
-        <div class="item__price">3 799 руб.</div>
+        <div class="item__price">
+          <span id="item__price_coat">3799</span> руб.
+        </div>
       </div>
 
       <!-- Товар 5 -->
@@ -87,14 +95,23 @@
             Количество: 1
           </p>
         </div>
-        <div class="item__price">2 599 руб.</div>
+        <div class="item__price">
+          <span id="item__price_trousers">2599</span> руб.
+        </div>
       </div>
     </div>
 
-    <div class="count">
-      <button class="count__button">Использовать купон на 20%</button>
-      <div class="count__sum">Итого:</div>
+    <div class="count-container">
+      <button class="count__button" onclick="countDiscountedSum()">
+        Использовать купон на 20%
+      </button>
+      <div class="count">
+        <p>Итого:</p>
+        <br />
+        <div class="count__sum"></div>
+      </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
